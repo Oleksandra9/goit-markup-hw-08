@@ -1,0 +1,10 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header__container {
+  @include flex-center($justify: space-between);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}

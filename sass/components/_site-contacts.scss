@@ -1,0 +1,35 @@
+.site-contacts {
+  display: flex;
+}
+.site-contacts__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.site-contacts__link {
+  color: $main-Text-Color;
+}
+.site-contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include font-style(500, 14px, 16px, 0.02em);
+
+  @include animation($properties: color fill);
+
+  // @extend %link;
+
+  &:hover,
+  &:focus {
+    color: $accent-Color;
+    fill: $accent-Color;
+  }
+}
+.site-contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

@@ -1,0 +1,27 @@
+.partners-logo {
+  display: flex;
+}
+.partners-logo__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.partners-logo__link {
+  @include flex-center();
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  fill: $icon-Color;
+
+  @include animation($properties: 'fill,border-color');
+
+  &:hover,
+  &:focus {
+    fill: $accent-Color;
+    border-color: $accent-Color;
+  }
+}

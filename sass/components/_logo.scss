@@ -1,0 +1,14 @@
+.logo {
+  color: $accent-Color;
+  margin-right: 93px;
+
+  font-family: Raleway, sans-serif;
+  @include font-style(700, 26px, 31px);
+  // @extend %link;
+}
+.logo__part--blackcolor {
+  color: $black-color;
+}
+.logo__part--whitecolor {
+  color: $white-color;
+}

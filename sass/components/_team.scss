@@ -1,0 +1,29 @@
+.team-cards {
+  display: flex;
+}
+.team-cards__item {
+  background-color: $white-color;
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @include last-four(1) {
+    margin-right: 0px;
+  }
+}
+.team-cards__box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.team-cards__title {
+  @include font-style(500, 16px, 19px);
+  color: $black-color;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.team-cards__text {
+  @include font-style($weight: 16px, $height: 19px);
+  text-align: center;
+  margin-bottom: 16px;
+}

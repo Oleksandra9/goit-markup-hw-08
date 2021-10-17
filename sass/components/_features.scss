@@ -1,0 +1,35 @@
+.features {
+  display: flex;
+}
+
+.features__item {
+  margin-right: 30px;
+  width: 270px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.features__item:last-child {
+  margin-right: 0px;
+}
+
+.features__title {
+  color: $black-color;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+
+  @include font-style(700, 14px, 16px);
+}
+.features__text {
+  @include font-style($size: 14px, $height: 24px);
+}
+.features__box {
+  @include flex-center();
+  background-color: $third-Background-Color;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
