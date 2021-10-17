@@ -71,7 +71,6 @@
 
   transform: translateY(101%);
   @include animation($properties: transform);
-  background-color: brown;
 }
 .portfolio-cards__reason {
   @include font-style(400, 18px, 28px);
