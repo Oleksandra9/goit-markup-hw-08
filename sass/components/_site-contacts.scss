@@ -1,5 +1,11 @@
 .site-contacts {
-  display: flex;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 .site-contacts__item {
   margin-right: 50px;
@@ -20,8 +26,6 @@
   @include font-style(500, 14px, 16px, 0.02em);
 
   @include animation($properties: color fill);
-
-  // @extend %link;
 
   &:hover,
   &:focus {
