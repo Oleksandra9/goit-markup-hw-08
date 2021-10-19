@@ -5,7 +5,9 @@
   }
 }
 .site-nav__item {
+  margin-bottom: 32px;
   @media (min-width: 768px) {
+    margin-bottom: 0px;
     margin-right: 50px;
     &:last-child {
       margin-right: 0px;
@@ -20,7 +22,7 @@
   }
 }
 .site-nav__link {
-  @include font-style(500, 14px, 16px, 0.02em);
+  @include font-style(500, 40px, 47px, 0.02em);
 
   @include animation($properties: color);
 
@@ -30,6 +32,7 @@
     fill: $accent-Color;
   }
   @media (min-width: 768px) {
+    @include font-style(500, 14px, 16px, 0.02em);
     display: flex;
     align-items: center;
     padding-top: 32px;
