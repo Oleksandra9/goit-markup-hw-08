@@ -25,6 +25,8 @@
   transform: translateX(100%);
 
   @include animation($properties: transform);
+
+  overflow: scroll;
 }
 .menu-container.is-open {
   transform: translateX(0);
