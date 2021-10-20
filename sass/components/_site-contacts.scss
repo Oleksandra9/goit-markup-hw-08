@@ -42,11 +42,12 @@
     fill: $accent-Color;
   }
   @media (min-width: 768px) {
-    @include font-style(500, 14px, 16px, 0.02em);
+    @include font-style(500, 12px, 14px, 0.02em);
     display: flex;
     align-items: center;
   }
   @media (min-width: 1200px) {
+    @include font-style(500, 14px, 16px, 0.02em);
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -63,5 +64,17 @@
     display: block;
     fill: currentColor;
     margin-right: 10px;
+  }
+  &--mailsize {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+  &--tellsize {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+    }
   }
 }
