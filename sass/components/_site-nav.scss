@@ -1,13 +1,25 @@
 .site-nav {
   display: none;
+
+  @media (max-width: 767px) {
+    margin-bottom: 302px;
+  }
   @media (min-width: 768px) {
     display: flex;
   }
+  @media (max-width: 1199px) {
+    margin-right: 84px;
+  }
 }
 .site-nav__item {
-  margin-bottom: 32px;
+  @media (max-width: 767px) {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
   @media (min-width: 768px) {
-    margin-bottom: 0px;
     margin-right: 50px;
     &:last-child {
       margin-right: 0px;
@@ -41,8 +53,8 @@
 }
 
 .site-nav__link--current {
+  color: $accent-Color;
   @media (min-width: 768px) {
-    color: $accent-Color;
     &::after {
       position: absolute;
 
