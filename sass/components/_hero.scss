@@ -19,7 +19,9 @@
     ),
     url(../images/hero.jpg);
 }
-
+.hero--hidden {
+  display: none;
+}
 .hero__title {
   @include font-style(900, 44px, 60px, 0.06em);
   color: $white-color;

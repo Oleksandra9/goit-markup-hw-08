@@ -1,9 +1,10 @@
 .site-contacts {
-  margin-bottom: 64px;
   display: none;
+  @media (max-width: 768px) {
+    margin-bottom: 64px;
+  }
   @media (min-width: 768px) {
     display: block;
-    margin-bottom: 0px;
   }
   @media (min-width: 1200px) {
     display: flex;
@@ -16,14 +17,14 @@
   }
   @media (min-width: 768px) {
     margin-bottom: 10px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 0px;
     margin-right: 50px;
     &:last-child {
       margin-right: 0px;
       margin-bottom: 0px;
     }
-  }
-  @media (min-width: 1200px) {
-    margin-bottom: 0px;
   }
 }
 
