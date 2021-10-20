@@ -980,11 +980,6 @@ a {
   color: #fff;
 }
 
-.footer__address-box {
-  margin-right: 70px;
-  flex-grow: 1;
-}
-
 @media (max-width: 767px) {
   .footer__address-box {
     margin-bottom: 60px;
@@ -994,6 +989,13 @@ a {
 @media (max-width: 1199px) {
   .footer__address-box {
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__address-box {
+    margin-right: 70px;
+    flex-grow: 1;
   }
 }
 
@@ -1056,7 +1058,7 @@ a {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1199px) {
   .footer__social-box {
     margin-right: 90px;
   }
