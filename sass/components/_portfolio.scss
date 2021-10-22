@@ -1,11 +1,27 @@
 .portfolio-filters {
-  margin-bottom: 50px;
-  @include flex-center();
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    @include flex-center();
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-filters__item {
   margin-right: 8px;
   &:last-child {
     margin-right: 0px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 .portfolio-filters__button {

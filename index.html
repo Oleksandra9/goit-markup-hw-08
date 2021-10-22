@@ -168,6 +168,7 @@
             <li class="works-list__item">
               <div class="works-list__thumb">
                 <img
+                  srcset="./images/1.jpg 1x, ./images/1@2x.jpg 2x"
                   src="./images/1.jpg"
                   alt="человек печатает"
                   width="370"
@@ -181,6 +182,7 @@
             <li class="works-list__item">
               <div class="works-list__thumb">
                 <img
+                  srcset="./images/2.jpg 1x, ./images/2@2x.jpg 2x"
                   src="./images/2.jpg"
                   alt="человек печатает"
                   width="370"
@@ -194,6 +196,7 @@
             <li class="works-list__item">
               <div class="works-list__thumb">
                 <img
+                  srcset="./images/3.jpg 1x, ./images/3@2x.jpg 2x"
                   src="./images/3.jpg"
                   alt="человек печатает"
                   width="370"
@@ -215,12 +218,25 @@
 
           <ul class="team-cards">
             <li class="team-cards__item">
-              <img
-                src="./images/team1.jpg"
-                alt="мужчина в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1m-@x.jpg  1x,
+                    ./images/team-1m-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team-1t.jpg 1x, ./images/team-1t@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team-1d.jpg 1x, ./images/team-1d@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team-1m-@x.jpg" alt="фото" />
+              </picture>
+
               <div class="team-cards__box">
                 <h3 class="team-cards__title">Игорь Демьяненко</h3>
                 <p class="team-cards__text">Product Designer</p>
@@ -257,12 +273,25 @@
               </div>
             </li>
             <li class="team-cards__item">
-              <img
-                src="./images/team2.jpg"
-                alt="женщина в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-2m-@x.jpg  1x,
+                    ./images/team-2m-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team-2t.jpg 1x, ./images/team-2t@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team-2d.jpg 1x, ./images/team-2d@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team-2m-@x.jpg" alt="фото" />
+              </picture>
+
               <div class="team-cards__box">
                 <h3 class="team-cards__title">Ольга Репина</h3>
                 <p class="team-cards__text">Frontend Developer</p>
@@ -299,12 +328,25 @@
               </div>
             </li>
             <li class="team-cards__item">
-              <img
-                src="./images/team3.jpg"
-                alt="мужчина улыбается"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-3m-@x.jpg  1x,
+                    ./images/team-3m-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team-3t.jpg 1x, ./images/team-3t@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team-3d.jpg 1x, ./images/team-3d@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team-3m-@x.jpg" alt="фото" />
+              </picture>
+
               <div class="team-cards__box">
                 <h3 class="team-cards__title">Николай Тарасов</h3>
                 <p class="team-cards__text">Marketing</p>
@@ -341,12 +383,25 @@
               </div>
             </li>
             <li class="team-cards__item">
-              <img
-                src="./images/team4.jpg"
-                alt="мужчина в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-4m-@x.jpg  1x,
+                    ./images/team-4m-@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team-4t.jpg 1x, ./images/team-4t@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team-4d.jpg 1x, ./images/team-4d@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team-4m-@x.jpg" alt="фото" />
+              </picture>
+
               <div class="team-cards__box">
                 <h3 class="team-cards__title">Михаил Ермаков</h3>
                 <p class="team-cards__text">UI Designer</p>
@@ -620,7 +675,9 @@
       </button>
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--current" href="">Студия</a>
+          <a class="site-nav__link site-nav__link--current" href="./index.html"
+            >Студия</a
+          >
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
