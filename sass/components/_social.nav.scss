@@ -1,5 +1,7 @@
 .social-nav {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
 }
 .social-nav__item {
   margin-right: 10px;
@@ -16,10 +18,3 @@
   @include font-style(500, 18px, 22px, 0.02em);
   color: $accent-Color;
 }
-
-// .line {
-//   margin-left: 10px;
-//   margin-right: 10px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   background-color: rgba(33, 33, 33, 0.2);
-// }
