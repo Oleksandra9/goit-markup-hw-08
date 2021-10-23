@@ -29,16 +29,16 @@
 }
 
 .features__title {
-  @media (max-width: 767px) {
-    text-align: center;
-  }
-
   color: $black-color;
   text-transform: uppercase;
 
   margin-bottom: 10px;
 
   @include font-style(700, 14px, 16px);
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 .features__text {
   @include font-style($size: 14px, $height: 24px);

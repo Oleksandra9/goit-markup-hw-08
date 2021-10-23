@@ -1180,18 +1180,6 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 1199px) {
-  .sign-up-form__input {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .sign-up-form__input {
-    width: 100%;
-  }
-}
-
 .sign-up-form__input:focus {
   border: 1px solid #2196f3;
   outline: none;
@@ -1203,6 +1191,13 @@ a {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 1199px) {
+  .sign-up-form__input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .sign-up-form__icon {
