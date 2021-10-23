@@ -26,6 +26,7 @@
 }
 .menu-container.is-open {
   transform: translateX(0);
+  overflow: scroll;
 }
 .button-menu--close {
   position: absolute;

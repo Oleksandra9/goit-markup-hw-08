@@ -97,12 +97,27 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: 480px) {
+  .backdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop__button {
@@ -147,6 +162,15 @@ a {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 1199px) {
+  .modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
+
 .modal-form__field {
   position: relative;
   display: flex;
@@ -164,7 +188,7 @@ a {
 }
 
 .modal-form__input {
-  width: 448px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 11px 42px;
   border-radius: 4px;
@@ -193,7 +217,7 @@ a {
 }
 
 .modal-form__textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -230,6 +254,15 @@ a {
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 1199px) {
+  .modal-form__checkbox-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-form__checkbox-input {
@@ -508,7 +541,7 @@ a {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .site-contacts {
     margin-bottom: 64px;
   }
@@ -1210,6 +1243,7 @@ a {
 
 .menu-container.is-open {
   transform: translateX(0);
+  overflow: scroll;
 }
 
 .button-menu--close {
