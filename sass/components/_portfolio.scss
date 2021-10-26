@@ -70,7 +70,9 @@
   }
 }
 .portfolio-cards__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   @include animation($properties: box-shadow);
   &:hover,
   &:focus {
@@ -103,13 +105,9 @@
   color: $white-color;
 }
 .portfolio-cards__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid $third-Background-Color;
-}
-.portfolio-cards__description--tablet-size {
-  @media (min-width: 768px) and (max-width: 1199px) {
-    padding: 20px 24px 56px 24px;
-  }
 }
 .portfolio-cards__title {
   @include font-style(700, 18px, 36px, 0.06em);
